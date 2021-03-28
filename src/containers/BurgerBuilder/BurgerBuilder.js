@@ -2,7 +2,7 @@ import {Component} from 'react';
 import Burger from "../../components/Burger/Burger";
 import BuildControls from "../../components/Burger/BuildControls/BuildControls";
 import Modal from "../../components/UI/Modal/Modal";
-import OrderSumary from "../../components/Burger/OrderSummary/OrderSumary";
+import OrderSumary from "../../components/Burger/OrderSummary/OrderSummary";
 
 const INGREDIENT_PRICES = {
     salad: 0.5,
@@ -76,7 +76,7 @@ class BurgerBuilder extends Component {
     }
 
     purchaseContinueHandler = () => {
-        alert('You cotninued!');
+        alert('You continued!');
     }
 
     render() {
