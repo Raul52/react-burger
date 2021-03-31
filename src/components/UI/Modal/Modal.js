@@ -1,13 +1,8 @@
 import classes from "./Modal.module.css"
 import Backdrop from "../Backdrop/Backdrop";
-import {Component} from "react";
+import {PureComponent} from "react";
 
-class Modal extends Component {
-
-    //alternative would be PureComponent but that checks all props so it's more inefficient than one simple check
-    shouldComponentUpdate(nextProps, nextState, nextContext) {
-        return nextProps.show !== this.props.show;
-    }
+class Modal extends PureComponent {
 
     render() {
         return (<>
